@@ -1,5 +1,7 @@
 -- Write SELECT statements for:
 -- Albums released after 1991
+use codeup_test_db;
+
 select * from albums where release_date > 1991;
 -- Albums with the genre 'disco'
 select * from albums where genre = 'disco';
