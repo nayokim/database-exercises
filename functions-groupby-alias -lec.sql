@@ -28,3 +28,19 @@ SELECT CONCAT(
                ((((UNIX_TIMESTAMP() - UNIX_TIMESTAMP('2014-02-04'))/60)/60)/24)/365,
                ' years'
            );
+
+select gender, count(gender) as 'results'
+from employees
+group by gender limit 10;
+
+#when you dont care about other parameters
+select distinct gender from employees;
+
+select first_name, count(first_name) as repeats
+from employees
+group by first_name
+order by repeats
+
+
+
+
