@@ -36,7 +36,7 @@ INSERT INTO users (name, email, role_id) VALUES
 select *
     from users;
 
-
+select * from roles;
 
 #INNER JOIN -  4 users - this is because 2 users in the users table do not have IDs
 select *
