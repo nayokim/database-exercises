@@ -41,3 +41,20 @@ FROM
     orderdetails
 ORDER BY
     quantityOrdered * priceEach DESC;
+
+#using the field() function to map order status
+
+SELECT
+    orderNumber,
+       status
+FROM
+    orders
+ORDER BY
+    FIELD(status,
+        'In Process',
+        'On Hold',
+        'Cancelled',
+        'Resolved',
+        'Disputed',
+        'Shipped'
+        );
