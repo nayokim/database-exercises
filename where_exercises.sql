@@ -32,7 +32,7 @@ select *
 from employees
 where last_name like '%q%';
 #
-# Update your query for 'Irena', 'Vidya', or 'Maya' to use OR instead of IN — 709 rows.
+# Update your query for 'Irena', 'Vidya', or 'Maya' to use OR.sql instead of IN — 709 rows.
 select *
 from employees
 where (first_name  = 'Irena' or first_name = 'Vidya' or  first_name = 'Maya')

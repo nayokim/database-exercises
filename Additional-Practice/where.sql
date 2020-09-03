@@ -9,7 +9,7 @@ USE classicmodels;
 # WHERE
 #     search_condition;
 
-#The search_condition is a combination of one or more predicates using the logical operator AND, OR and NOT.
+#The search_condition is a combination of one or more predicates using the logical operator AND, OR.sql and NOT.
 # FROM -> WHERE -> SELECT -> ORDER By
 
 # Using MySQL WHERE clause with equal operator example
@@ -33,7 +33,7 @@ WHERE jobtitle = 'Sales Rep'
   AND officeCode = 1;
 
 
-#Using MySQL WHERE clause with OR operator
+#Using MySQL WHERE clause with OR.sql operator
 #This query finds employees whose job title is Sales Rep or employees who locate the office with office code 1:
 
 select lastName,
