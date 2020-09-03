@@ -18,6 +18,7 @@ USE `classicmodels`;
 #SELECT (true OR false) AND false; // evaluates 0
 # eval. parenthesis first  then AND
 
+#below statement is evaluating the OR statement in parenthesis then the AND
 
 SELECT
     customerName,
@@ -27,8 +28,10 @@ FROM
     customers
 where (country = 'USA' OR
       country ='France')
-    and creditlimit > 10000;
+    and creditlimit > 100000;
 
+
+#below statement is evaluating the and statement then the OR
 SELECT
     customername,
     country,
@@ -37,4 +40,4 @@ FROM
     customers
 WHERE country = 'USA'
    OR country = 'France'
-    AND creditlimit > 10000;
+    AND creditlimit > 100000;
